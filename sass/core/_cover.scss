@@ -1,0 +1,42 @@
+.wp-block-cover {
+  align-items: center;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  min-height: 430px;
+  position: relative;
+
+  .wp-block-cover-text {
+    color: white;
+    font-size: 2em;
+    padding: 14px;
+    margin: 0;
+    z-index: 1;
+  }
+
+  &.has-background-dim::before {
+    background-color: inherit;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  // Background Opacity
+  @each $opacity in 10, 20, 30, 40, 60, 70, 80, 90, 100 {
+    &.has-background-dim-#{$opacity}::before { opacity: $opacity / 100; }
+  }
+
+  // Fixed Background
+  &.has-parallax { background-attachment: fixed; }
+
+  &.has-left-content { justify-content: flex-start; }
+  &.has-right-content { justify-content: flex-end; }
+}

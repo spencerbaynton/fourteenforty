@@ -1,0 +1,30 @@
+.wp-block-quote {
+  @include wp-block;
+
+  border-left: 4px solid black;
+  padding-left: 1em;
+
+  cite {
+    color: #6C7781;
+    display: block;
+    font-size: 13px;
+    font-style: normal;
+    margin-top: 1em;
+  }
+
+  p {
+    line-height: 1.8;
+    margin: 0 0 1em;
+  }
+}
+
+.is-style-large {
+  border-left: none;
+  padding-right: 1em;
+
+  p {
+    font-size: 24px;
+    font-style: italic;
+    line-height: 1.6;
+  }
+}

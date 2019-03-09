@@ -1,0 +1,15 @@
+p {
+  @include wp-block;
+
+  &.has-background { padding: 20px 30px; }
+
+  &.has-drop-cap::first-letter {
+    float: left;
+    font-size: 8.4em;
+    font-style: normal;
+    line-height: 0.68;
+    margin-right: 0.1em;
+    margin-top: 0.05em;
+    text-transform: uppercase;
+  }
+}

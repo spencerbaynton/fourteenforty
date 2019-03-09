@@ -1,0 +1,32 @@
+.wp-block-image {
+  @include wp-block;
+
+  figcaption {
+    color: #555D66;
+    font-size: 13px;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    text-align: center;
+  }
+
+  .alignleft {
+    float: left;
+    margin-bottom: 32px;
+    margin-right: 2em;
+  }
+
+  .alignright {
+    float: right;
+    margin-bottom: 32px;
+    margin-left: 2em;
+  }
+
+  .is-resized {
+    display: table;
+
+    figcaption {
+      caption-side: bottom;
+      display: table-caption;
+    }
+  }
+}
