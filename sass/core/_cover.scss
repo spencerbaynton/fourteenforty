@@ -10,14 +10,6 @@
   min-height: 430px;
   position: relative;
 
-  .wp-block-cover-text {
-    color: white;
-    font-size: 2em;
-    padding: 14px;
-    margin: 0;
-    z-index: 1;
-  }
-
   &.has-background-dim::before {
     background-color: inherit;
     bottom: 0;
@@ -39,4 +31,12 @@
 
   &.has-left-content { justify-content: flex-start; }
   &.has-right-content { justify-content: flex-end; }
+
+  &-text {
+    color: white;
+    font-size: 2em;
+    padding: 14px;
+    margin: initial;
+    z-index: 1;
+  }
 }
