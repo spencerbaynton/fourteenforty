@@ -1,8 +1,6 @@
 .wp-block-separator {
   @include wp-block;
 
-  border-bottom-color: #8F98A1;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
+  border-bottom: 2px solid #8F98A1;
   max-width: 100px;
 }
