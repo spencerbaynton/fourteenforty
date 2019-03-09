@@ -1,12 +1,12 @@
 .wp-block-cover {
+  @include wp-block;
+
   align-items: center;
   background-color: black;
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center;
-  margin-bottom: 32px;
-  margin-top: 32px;
   min-height: 430px;
   position: relative;
 
