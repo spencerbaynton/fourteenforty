@@ -1,0 +1,15 @@
+.wp-block-code {
+  @include wp-block;
+
+  border: 1px solid #E2E4E7;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 0.8em 1em;
+
+  code {
+    background-color: initial;
+    margin-left: initial;
+    margin-right: initial;
+    padding: initial;
+  }
+}

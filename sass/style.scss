@@ -44,6 +44,8 @@ code {
 
 img { max-width: 100%; }
 
+@import 'core/button';
+@import 'core/code';
 @import 'core/cover';
 @import 'core/gallery';
 @import 'core/heading';
