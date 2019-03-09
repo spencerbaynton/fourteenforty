@@ -6,7 +6,7 @@ p {
   &.has-drop-cap::first-letter {
     float: left;
     font-size: 8.4em;
-    font-style: normal;
+    font-style: initial;
     line-height: 0.68;
     margin-right: 0.1em;
     margin-top: 0.05em;
