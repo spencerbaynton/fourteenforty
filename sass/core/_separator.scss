@@ -2,5 +2,23 @@
   @include wp-block;
 
   border-bottom: 2px solid #8F98A1;
-  max-width: 100px;
+
+  &.is-style-default { max-width: 100px; }
+
+  &.is-style-dots {
+    border: initial;
+    line-height: 1;
+    text-align: center;
+
+    &::before {
+      color: #191E23;
+      content: "\00b7 \00b7 \00b7";
+      font-family: serif;
+      font-size: 20px;
+      letter-spacing: 2em;
+      padding-left: 2em;
+    }
+  }
+
+  &.is-style-wide { border-bottom-width: 1px; }
 }
