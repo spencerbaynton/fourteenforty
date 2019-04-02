@@ -24,4 +24,6 @@ p {
       text-transform: uppercase;
     }
   }
+
+  &.has-text-color a { color: inherit; }
 }

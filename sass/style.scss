@@ -23,6 +23,15 @@ html { box-sizing: border-box; }
   box-sizing: inherit;
 }
 
+a {
+  color: #007FAC;
+
+  &:active,
+  &:hover {
+    color: #00A0D2;
+  }
+}
+
 body {
   color: #191E23;
   font-family: "Noto Serif", serif;
